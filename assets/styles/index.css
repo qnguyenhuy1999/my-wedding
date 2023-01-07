@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway';
+}
+
+html,
+body {
+  background: #f7f7f7;
+  margin: 0;
+}
+
+body {
+  margin-top: -11px !important;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+button:hover {
+  background: #eee;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  -webkit-transition: border-color ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+input:focus,
+select:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%),
+    0 0 8px rgb(102 175 233 / 60%);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(102 175 233 / 60%);
+}
+
+video::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+video::-webkit-media-controls-mute-button {
+  display: none;
+}
+
+audio {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 520px;
+  background-color: #fff;
+  margin: auto;
+}
+
+.main {
+}
+
+.page {
+}
+
+.first-page {
+  padding: 100px 40px 0;
+}
+
+.first-page .image-wrapper img {
+  padding-left: 40px;
+  border-left: 2px solid;
+}
+
+.first-page .name {
+  text-align: center;
+}
+
+.second-page {
+  height: 736px;
+  background-image: url('../images/mat_save_the_date.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.third-page .title {
+  text-align: center;
+}
+
+.third-page .swiper-wrapper {
+  height: 568px;
+}
+
+.third-page .swiper-wrapper img {
+  height: 100%;
+  background-size: cover;
+}
+
+.fourth-page {
+  height: 730px;
+  background-image: url('../images/mat_sau_2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fifth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0 20px;
+}
+
+.fifth-page .time-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fifth-page .time-wrapper .time-box {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 5px;
+  border: 1px solid;
+  box-shadow: 0 3px 3px #0003;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.fifth-page .time-wrapper .time-box h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.fifth-page .time-wrapper .time-box p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.fifth-page button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: 1px solid #dcd4c8;
+  border-radius: 6px;
+}
+
+.sixth-page {
+  padding: 30px 0;
+}
+
+.sixth-page .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.sixth-page .type-of-guest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sixth-page .type-of-guest .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 120px;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.sixth-page .type-of-guest .box:first-child {
+  margin-right: 20px;
+}
+
+.sixth-page .type-of-guest .box img {
+  width: 38px;
+}
+
+.sixth-page .type-of-guest .box p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.sixth-page input,
+.sixth-page .select-option,
+.sixth-page select {
+  width: 100%;
+}
+
+.sixth-page .response {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 100px;
+  background: #fde9e3;
+  margin-top: 30px;
+  border-radius: 6px;
+}
+
+.sixth-page .response .response-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sixth-page .response .response-item svg {
+  height: 50px;
+}
+
+.sixth-page .response .response-item p {
+  margin-bottom: 0;
+}
+
+.sixth-page .select-option {
+  margin-bottom: 20px;
+}
+
+.sixth-page button[type='submit'] {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fde9e3;
+  border-radius: 6px;
+}
+
+.seventh-page {
+  padding: 20px 0;
+}
+
+.seventh-page video {
+  width: 100%;
+}
+
+.eighth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.eighth-page hr {
+  margin-bottom: 60px;
+}
+
+.eighth-page .bank-account hr {
+  margin-bottom: 20px;
+}
+
+.nineth-page {
+  padding-top: 50px;
+}
+
+.functional-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.functional-wrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #fde9e3;
+}
