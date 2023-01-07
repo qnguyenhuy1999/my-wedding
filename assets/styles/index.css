@@ -66,10 +66,6 @@ video::-webkit-media-controls-mute-button {
   display: none;
 }
 
-audio {
-  display: none;
-}
-
 .text-center {
   text-align: center;
 }
