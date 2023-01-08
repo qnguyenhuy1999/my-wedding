@@ -97,7 +97,6 @@ video::-webkit-media-controls-mute-button {
 
 .second-page {
   height: 736px;
-  background-image: url('../images/mat_save_the_date.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -117,7 +116,6 @@ video::-webkit-media-controls-mute-button {
 
 .fourth-page {
   height: 730px;
-  background-image: url('../images/mat_sau_2.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -147,6 +145,10 @@ video::-webkit-media-controls-mute-button {
   box-shadow: 0 3px 3px #0003;
   margin-right: 20px;
   border-radius: 10px;
+}
+
+.fifth-page .time-wrapper .time-box:last-child{
+  margin-right: 0;
 }
 
 .fifth-page .time-wrapper .time-box h1 {
@@ -282,6 +284,7 @@ video::-webkit-media-controls-mute-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 1;
 }
 
 .functional-wrapper button {
@@ -298,11 +301,17 @@ video::-webkit-media-controls-mute-button {
   body {
     background: #f7f7f7;
     margin: 0;
-    min-width: 100vw;
   }
 
-  .wrapper {
-    min-width: 100vw;
-    max-width: 100vw;
+  body, .wrapper {
+    overflow-x: hidden;
+  }
+
+  .second-page, .fourth-page {
+    height: 100%;
+  }
+
+  .nineth-page iframe {
+    width: 100%;
   }
 }
