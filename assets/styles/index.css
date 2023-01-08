@@ -292,3 +292,17 @@ video::-webkit-media-controls-mute-button {
   border-radius: 50%;
   background-color: #fde9e3;
 }
+
+@media only screen and (max-width: 520px) {
+  html,
+  body {
+    background: #f7f7f7;
+    margin: 0;
+    min-width: 100vw;
+  }
+
+  .wrapper {
+    min-width: 100vw;
+    max-width: 100vw;
+  }
+}
