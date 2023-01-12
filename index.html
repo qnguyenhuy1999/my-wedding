@@ -14,6 +14,7 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -45,14 +46,14 @@
 
 				<div class="swiper">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08957.JPG" alt=""></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08962.JPG" alt=""></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09056.JPG" alt=""></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09037.JPG" alt=""></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08701.JPG" alt=""></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08865.JPG" alt=""></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09112.JPG" alt=""></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09410.JPG" alt=""></div>
+						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08957.JPG" alt="" loading="lazy"></div>
+						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08962.JPG" alt="" loading="lazy"></div>
+						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09056.JPG" alt="" loading="lazy"></div>
+						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09037.JPG" alt="" loading="lazy"></div>
+						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08701.JPG" alt="" loading="lazy"></div>
+						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08865.JPG" alt="" loading="lazy"></div>
+						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09112.JPG" alt="" loading="lazy"></div>
+						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09410.JPG" alt="" loading="lazy"></div>
 					</div>
 
 					<div class="swiper-button-prev"></div>
@@ -94,25 +95,26 @@
 					<h1 class="title">
 						Thông tin phản hồi
 					</h1>
-					<p class="text-center">Để thuận tiện cho việc sắp xếp chỗ ngồi, vui lòng phản hồi giúp vợ chồng mình nhé!</p>
+					<p class="text-center">Để thuận tiện cho việc sắp xếp chỗ ngồi, vui lòng phản hồi giúp vợ chồng mình nhé!
+					</p>
 
 					<div class="type-of-guest">
-						<div class="box">
+						<div class="type-of-guest-box" data-type-of-guest="bride's guest">
 							<img src="./assets/images/bride.png" alt="">
 							<p>Khách nhà gái</p>
 						</div>
 
-						<div class="box">
+						<div class="type-of-guest-box" data-response="yes" data-type-of-guest="groom's guest">
 							<img src="./assets/images/groom.png" alt="">
-							<p>Khách nhà gái</p>
+							<p>Khách nhà trai</p>
 						</div>
 					</div>
 
 					<h2>Tên khách mời</h2>
-					<input type="text" placeholder="Nhập tên của quý khách vào đây nhé">
+					<input type="text" placeholder="Nhập tên của quý khách vào đây nhé" id="fullName">
 
 					<div class="response">
-						<div class="response-item">
+						<div class="response-item" data-response="yes">
 							<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.41 149.42">
 								<defs>
 									<style>
@@ -140,7 +142,7 @@
 							<p>Tham Dự</p>
 						</div>
 
-						<div class="response-item">
+						<div class="response-item" data-response="no">
 							<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.41 149.42">
 								<defs>
 									<style>
@@ -167,7 +169,7 @@
 
 					<h2>Số người tham dự</h2>
 					<div class="select-option">
-						<select>
+						<select id="attendees">
 							<option value="1">1 người</option>
 							<option value="2">2 người</option>
 							<option value="3">3 người</option>
@@ -176,7 +178,9 @@
 						</select>
 					</div>
 
-					<button type="submit">Gửi Phản Hồi</button>
+					<div id="error"></div>
+
+					<button type="submit" id="btnSubmit">Gửi Phản Hồi</button>
 				</div>
 			</div>
 
@@ -222,8 +226,71 @@
 		</div>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./assets/js/countdown.js"></script>
+	<script src="./assets/js/submitForm.js"></script>
+
+	<script type="module">
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+
+		const firebaseConfig = {
+			apiKey: 'AIzaSyBj5SHHlrF9maWxcM5QpJyck133LWpFaKA',
+			authDomain: 'yvahuy-wedding.firebaseapp.com',
+			projectId: 'yvahuy-wedding',
+			storageBucket: 'yvahuy-wedding.appspot.com',
+			messagingSenderId: '119611166132',
+			appId: '1:119611166132:web:a08ab1a611a93f970db6e1',
+			databaseURL: 'https://yvahuy-wedding-default-rtdb.asia-southeast1.firebasedatabase.app'
+		};
+
+		const app = initializeApp(firebaseConfig);
+
+		import { getDatabase, set, ref, get, child } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js';
+
+		const db = getDatabase();
+		const btnSubmit = document.getElementById('btnSubmit');
+		const error = document.getElementById('error');
+
+		const uuidv4 = () => {
+			return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+				(c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+			);
+		}
+
+		const insertData = () => {
+			const responseItemActive = document.getElementsByClassName(
+				'response-item active'
+			)[0];
+			const typeOfGuestActive = document.getElementsByClassName(
+				'type-of-guest-box active'
+			)[0];
+
+			if (
+				!typeOfGuestActive ||
+				!fullName.value ||
+				!responseItemActive ||
+				!attendees.value
+			) {
+				error.innerHTML = 'Vui lòng nhập đủ thông tin nhé!!!';
+			} else {
+				error.innerHTML = '';
+
+				set(ref(db, "/attendees/" + uuidv4()), {
+					amount: +attendees.value,
+					fullName: fullName.value,
+					response: responseItemActive.getAttribute('data-response'),
+					typeOfGuest: typeOfGuestActive.getAttribute('data-type-of-guest'),
+				}).then(() => {
+					console.log('saved');
+				});
+			}
+		}
+
+		btnSubmit.addEventListener('click', (e) => {
+			e.preventDefault();
+			insertData();
+		});
+	</script>
+
 	<script>
 		const swiper = new Swiper('.swiper', {
 			navigation: {

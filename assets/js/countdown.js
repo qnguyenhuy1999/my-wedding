@@ -1,4 +1,4 @@
-const WEDDING_DAY = '02/11/2023';
+const WEDDING_DAY = '02/11/2023 18:00:00';
 const countDownDate = new Date(WEDDING_DAY).getTime();
 
 const x = setInterval(function () {
