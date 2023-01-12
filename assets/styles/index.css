@@ -262,6 +262,7 @@ video::-webkit-media-controls-mute-button {
   padding: 20px 0;
   background-color: #fde9e3;
   border-radius: 6px;
+  font-size: 18px;
 }
 
 .seventh-page {
@@ -278,6 +279,10 @@ video::-webkit-media-controls-mute-button {
   align-items: center;
   justify-content: center;
   padding-bottom: 30px;
+}
+
+.eighth-page h1 {
+  text-align: center;
 }
 
 .eighth-page hr {
