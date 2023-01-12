@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Raleway';
+  font-family: 'Raleway', 'Great Vibes', sans-serif, cursive;
 }
 
 html,
@@ -80,10 +80,16 @@ video::-webkit-media-controls-mute-button {
 }
 
 .page {
+  background: #fde9f4;
 }
 
 .first-page {
-  padding: 100px 40px 0;
+  padding: 100px 40px 30px;
+}
+
+.first-page .name {
+  margin-bottom: 0;
+  font-family: 'Great Vibes';
 }
 
 .first-page .image-wrapper img {
@@ -101,8 +107,13 @@ video::-webkit-media-controls-mute-button {
   background-size: cover;
 }
 
+.third-page {
+  padding-top: 30px;
+}
+
 .third-page .title {
   text-align: center;
+  margin-top: 0;
 }
 
 .third-page .swiper-wrapper {
@@ -147,7 +158,7 @@ video::-webkit-media-controls-mute-button {
   border-radius: 10px;
 }
 
-.fifth-page .time-wrapper .time-box:last-child{
+.fifth-page .time-wrapper .time-box:last-child {
   margin-right: 0;
 }
 
@@ -266,6 +277,7 @@ video::-webkit-media-controls-mute-button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .eighth-page hr {
@@ -303,15 +315,25 @@ video::-webkit-media-controls-mute-button {
     margin: 0;
   }
 
-  body, .wrapper {
+  body,
+  .wrapper {
     overflow-x: hidden;
   }
 
-  .second-page, .fourth-page {
+  .second-page,
+  .fourth-page {
     height: 100%;
+  }
+
+  .sixth-page .response {
+    padding: 20px 40px;
   }
 
   .nineth-page iframe {
     width: 100%;
   }
+}
+
+.line-page {
+  margin: 0;
 }
