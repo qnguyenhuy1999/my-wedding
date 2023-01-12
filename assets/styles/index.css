@@ -330,6 +330,10 @@ video::-webkit-media-controls-mute-button {
     height: 100%;
   }
 
+  .third-page .swiper-wrapper {
+    height: 600px;
+  }
+
   .sixth-page .response {
     padding: 20px 40px;
   }
