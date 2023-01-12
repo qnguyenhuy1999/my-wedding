@@ -279,6 +279,7 @@
 					fullName: fullName.value,
 					response: responseItemActive.getAttribute('data-response'),
 					typeOfGuest: typeOfGuestActive.getAttribute('data-type-of-guest'),
+					createdDate: new Date()
 				}).then(() => {
 					console.log('saved');
 				});
