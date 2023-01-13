@@ -18,7 +18,7 @@
 </head>
 
 <body>
-	<audio autoplay loop hidden id="music">
+	<audio loop hidden muted id="music">
 		<source src="./assets/music/everytime_we_touch.mp3" type="audio/mpeg">
 		Your browser does not support the audio element.
 	</audio>
@@ -323,6 +323,8 @@
 		const musicIcon = document.getElementById('music-icon');
 
 		musicIcon.classList.add('fa-solid', 'fa-volume-high');
+		music.play();
+		music.muted = false;
 
 		musicBtn.addEventListener('click', e => {
 			music.muted = !music.muted;
