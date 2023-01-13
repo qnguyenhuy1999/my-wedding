@@ -178,7 +178,8 @@
 						</select>
 					</div>
 
-					<div id="error"></div>
+					<div id="message-response">
+					</div>
 
 					<button type="submit" id="btnSubmit">Gửi Phản Hồi</button>
 				</div>
@@ -248,7 +249,8 @@
 
 		const db = getDatabase();
 		const btnSubmit = document.getElementById('btnSubmit');
-		const error = document.getElementById('error');
+		const messageResponseWrapper = document.getElementById('message-response');
+		const message = document.createElement('p');
 
 		const uuidv4 = () => {
 			return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
@@ -270,20 +272,30 @@
 				!responseItemActive ||
 				!attendees.value
 			) {
-				error.innerHTML = 'Vui lòng nhập đủ thông tin nhé!!!';
+				const success = document.getElementById('success');
+				if (success) {
+					success.remove();
+				}
+				message.setAttribute('id', 'error');
+				message.innerHTML = 'Vui lòng nhập đủ thông tin nhé!!!';
 			} else {
-				error.innerHTML = '';
-
+				const error = document.getElementById('error');
+				if (error) {
+					error.remove();
+				}
 				set(ref(db, "/attendees/" + uuidv4()), {
 					amount: +attendees.value,
 					fullName: fullName.value,
 					response: responseItemActive.getAttribute('data-response'),
 					typeOfGuest: typeOfGuestActive.getAttribute('data-type-of-guest'),
-					createdDate: new Date()
+					createdDate: new Date().getTime()
 				}).then(() => {
-					console.log('saved');
+					message.setAttribute('id', 'success');
+					message.innerHTML = 'Rất cảm ơn quý khách đã đến tham dự ❤';
 				});
 			}
+
+			messageResponseWrapper.append(message)
 		}
 
 		btnSubmit.addEventListener('click', (e) => {

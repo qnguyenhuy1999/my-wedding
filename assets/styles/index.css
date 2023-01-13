@@ -357,7 +357,14 @@ video::-webkit-media-controls-mute-button {
   margin: 0;
 }
 
+#message-response {
+  margin-bottom: 10px;
+}
+
 #error {
   color: red;
-  margin-bottom: 10px;
+}
+
+#success {
+  color: #da84b9;
 }
