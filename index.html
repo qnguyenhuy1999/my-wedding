@@ -26,7 +26,7 @@
   </head>
 
   <body>
-    <audio loop hidden muted="true" id="music">
+    <audio loop hidden muted="true" id="music" autoplay="true">
       <source src="./assets/music/everytime_we_touch.mp3" type="audio/mpeg" />
       Your browser does not support the audio element.
     </audio>
@@ -434,17 +434,6 @@
 
       musicIcon.classList.add('fa-solid', 'fa-volume-xmark');
 
-      setTimeout(function () {
-        $('#music').trigger('click');
-      }, 500);
-
-      $('#music').click(function () {
-        musicIcon.classList.remove('fa-solid', 'fa-volume-xmark');
-        musicIcon.classList.add('fa-solid', 'fa-volume-high');
-        music.play();
-        music.muted = false;
-      });
-
       musicBtn.addEventListener('click', (e) => {
         music.muted = !music.muted;
         music.paused = !music.paused;
@@ -452,6 +441,7 @@
           musicIcon.classList.remove('fa-solid', 'fa-volume-high');
           musicIcon.classList.add('fa-solid', 'fa-volume-xmark');
         } else {
+          music.play();
           musicIcon.classList.remove('fa-solid', 'fa-volume-xmark');
           musicIcon.classList.add('fa-solid', 'fa-volume-high');
         }
