@@ -1,348 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quang Huy và Du Ý</title>
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="./assets/js/ics.deps.min.js"></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Quang Huy và Du Ý</title>
-	<link rel="stylesheet" href="assets/styles/index.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-</head>
+  <body>
+    <audio loop hidden muted="true" id="music">
+      <source src="./assets/music/everytime_we_touch.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
 
-<body>
-	<audio loop hidden muted="true" id="music">
-		<source src="./assets/music/everytime_we_touch.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-	</audio>
+    <div class="wrapper">
+      <div class="main">
+        <div class="page first-page">
+          <h1>THE</h1>
+          <h1>WEDDING</h1>
+          <h1>OF</h1>
 
-	<div class="wrapper">
-		<div class="main">
-			<div class="page first-page">
-				<h1>THE</h1>
-				<h1>WEDDING</h1>
-				<h1>OF</h1>
+          <div class="image-wrapper">
+            <img src="./assets/images/mat_truoc.png" />
+          </div>
 
-				<div class="image-wrapper">
-					<img src="./assets/images/mat_truoc.png" />
-				</div>
+          <h1 class="name">Quang Huy & Du Ý</h1>
+        </div>
 
-				<h1 class="name">Quang Huy & Du Ý</h1>
-			</div>
+        <div class="page second-page">
+          <img src="./assets/images/mat_save_the_date.png" alt="" />
+        </div>
 
-			<div class="page second-page">
-				<img src="./assets/images/mat_save_the_date.png" alt="">
-			</div>
+        <div class="page third-page">
+          <h2 class="title">Photo Gallery</h2>
 
-			<div class="page third-page">
-				<h2 class="title">Photo Gallery</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/gallery/DSC08957.JPG"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/gallery/DSC08962.JPG"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/gallery/DSC09056.JPG"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/gallery/DSC09037.JPG"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/gallery/DSC08701.JPG"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/gallery/DSC08865.JPG"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/gallery/DSC09112.JPG"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/gallery/DSC09410.JPG"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
 
-				<div class="swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08957.JPG" alt="" loading="lazy"></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08962.JPG" alt="" loading="lazy"></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09056.JPG" alt="" loading="lazy"></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09037.JPG" alt="" loading="lazy"></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08701.JPG" alt="" loading="lazy"></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC08865.JPG" alt="" loading="lazy"></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09112.JPG" alt="" loading="lazy"></div>
-						<div class="swiper-slide"><img src="./assets/images/gallery/DSC09410.JPG" alt="" loading="lazy"></div>
-					</div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
 
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-				</div>
-			</div>
+        <div class="page fourth-page">
+          <img src="./assets/images/mat_sau_2.png" alt="" />
+        </div>
 
-			<div class="page fourth-page">
-				<img src="./assets/images/mat_sau_2.png" alt="">
-			</div>
+        <div class="page fifth-page">
+          <h2 class="title">Mình cùng đếm ngược thời gian</h2>
+          <div class="time-wrapper">
+            <div class="time-box">
+              <h1 id="countdown-days">00</h1>
+              <p>NGÀY</p>
+            </div>
+            <div class="time-box">
+              <h1 id="countdown-hours">00</h1>
+              <p>GIỜ</p>
+            </div>
+            <div class="time-box">
+              <h1 id="countdown-minutes">00</h1>
+              <p>PHÚT</p>
+            </div>
+            <div class="time-box">
+              <h1 id="countdown-seconds">00</h1>
+              <p>GIÂY</p>
+            </div>
+          </div>
+          <a
+            href="#"
+            onclick="javascript:cal.download('Quang Huy and Du Y')"
+            class="btn-save-to-calendar"
+          >
+            <i class="fa-regular fa-calendar" style="margin-right: 5px"></i>Lưu
+            lại sự kiện
+          </a>
+        </div>
 
-			<div class="page fifth-page">
-				<h2 class="title">Mình cùng đếm ngược thời gian</h2>
-				<div class="time-wrapper">
-					<div class="time-box">
-						<h1 id="countdown-days">00</h1>
-						<p>NGÀY</p>
-					</div>
-					<div class="time-box">
-						<h1 id="countdown-hours">00</h1>
-						<p>GIỜ</p>
-					</div>
-					<div class="time-box">
-						<h1 id="countdown-minutes">00</h1>
-						<p>PHÚT</p>
-					</div>
-					<div class="time-box">
-						<h1 id="countdown-seconds">00</h1>
-						<p>GIÂY</p>
-					</div>
-				</div>
-				<button><i class="fa-regular fa-calendar" style="margin-right: 5px;"></i>Lưu lại sự kiện</button>
-			</div>
+        <div class="page sixth-page">
+          <img src="./assets/images/line_envelop.png" />
 
-			<div class="page sixth-page">
-				<img src="./assets/images/line_envelop.png">
+          <div class="body">
+            <h1 class="title">Thông tin phản hồi</h1>
+            <p class="text-center">
+              Để thuận tiện cho việc sắp xếp chỗ ngồi, vui lòng phản hồi giúp vợ
+              chồng mình nhé!
+            </p>
 
-				<div class="body">
-					<h1 class="title">
-						Thông tin phản hồi
-					</h1>
-					<p class="text-center">Để thuận tiện cho việc sắp xếp chỗ ngồi, vui lòng phản hồi giúp vợ chồng mình nhé!
-					</p>
+            <div class="type-of-guest">
+              <div class="type-of-guest-box" data-type-of-guest="bride's guest">
+                <img src="./assets/images/bride.png" alt="" />
+                <p>Khách nhà gái</p>
+              </div>
 
-					<div class="type-of-guest">
-						<div class="type-of-guest-box" data-type-of-guest="bride's guest">
-							<img src="./assets/images/bride.png" alt="">
-							<p>Khách nhà gái</p>
-						</div>
+              <div
+                class="type-of-guest-box"
+                data-response="yes"
+                data-type-of-guest="groom's guest"
+              >
+                <img src="./assets/images/groom.png" alt="" />
+                <p>Khách nhà trai</p>
+              </div>
+            </div>
 
-						<div class="type-of-guest-box" data-response="yes" data-type-of-guest="groom's guest">
-							<img src="./assets/images/groom.png" alt="">
-							<p>Khách nhà trai</p>
-						</div>
-					</div>
+            <h2>Tên khách mời</h2>
+            <input
+              type="text"
+              placeholder="Nhập tên của quý khách vào đây nhé"
+              id="fullName"
+            />
 
-					<h2>Tên khách mời</h2>
-					<input type="text" placeholder="Nhập tên của quý khách vào đây nhé" id="fullName">
+            <div class="response">
+              <div class="response-item" data-response="yes">
+                <svg
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 149.41 149.42"
+                >
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #545554;
+                      }
+                    </style>
+                  </defs>
+                  <path
+                    class="cls-1"
+                    d="M149.38,57.22c-.23.29-.45.6-.7.87a2.91,2.91,0,0,1-5.11-1.57,11.82,11.82,0,0,1,0-1.46q0-18.3,0-36.61A12.08,12.08,0,0,0,138.83,8.3a12.69,12.69,0,0,0-8.05-2.43H18.49a12.47,12.47,0,0,0-8,2.5,12,12,0,0,0-4.62,10q0,14.65,0,29.32v83.13c0,5.13,2,9.1,6.7,11.5a12.36,12.36,0,0,0,5.64,1.21q56.51,0,113,0c5.91,0,10.3-3.3,11.87-8.82a14.39,14.39,0,0,0,.47-4q0-22.68,0-45.36a3,3,0,0,1,2.16-3.21c1.31-.38,2.45.16,3.39,1.59a4,4,0,0,0,.28.32v50.47c-.91,7.34-5.24,11.86-11.93,14.42a12.22,12.22,0,0,1-4.45.59q-58.32,0-116.64,0c-7.78,0-14.59-6.38-16.19-13.19a15,15,0,0,1-.3-3.48c0-38.78.05-77.57,0-116.35C-.2,7.92,7.55.94,13.32.25A4.52,4.52,0,0,0,15.18,0h119c6.56.66,10.95,4.34,13.88,10a14.16,14.16,0,0,1,1.29,5.14Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M149.38,71.51c-1.27,1.93-2.54,2.53-4,1.85a2.8,2.8,0,0,1-1.79-2.88,2.77,2.77,0,0,1,2.16-2.61A2.71,2.71,0,0,1,148.79,69c.2.26.39.54.59.8Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M73.49,109.55a35.79,35.79,0,0,1-21.18-7.71c-1-.78-1.93-1.63-2.85-2.49a3,3,0,0,1-.4-4.38,2.86,2.86,0,0,1,4.29,0,30.79,30.79,0,0,0,8.84,6c11.59,4.8,22.32,3.34,32.13-4.54.53-.42,1-.91,1.53-1.35,1.65-1.41,3.31-1.45,4.51-.1s.93,3-.58,4.48a39.44,39.44,0,0,1-7.71,5.68C86.81,108.17,79,110,73.49,109.55Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M37.06,62.55a12.25,12.25,0,0,1,24.46-.06c.13,2-.9,3.37-2.63,3.54s-2.9-.86-3.19-2.8c-.59-3.87-2.57-6.08-5.68-6.34a6.31,6.31,0,0,0-7.13,6C42.73,64.67,42,65.7,40.56,66,38.42,66.4,37,65,37.06,62.55Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M112.33,62.63c0,2-1,3.34-2.72,3.43S106.68,65,106.49,63a6.3,6.3,0,0,0-6-6.09c-3.48-.15-6,2-6.61,5.59,0,.1,0,.19-.06.29-.41,2.51-1.55,3.57-3.5,3.25S87.6,64.13,88,61.69c1-6.28,5.63-10.67,12-10.78A12.14,12.14,0,0,1,112.33,62.63Z"
+                  ></path>
+                </svg>
+                <p>Tham Dự</p>
+              </div>
 
-					<div class="response">
-						<div class="response-item" data-response="yes">
-							<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.41 149.42">
-								<defs>
-									<style>
-										.cls-1 {
-											fill: #545554;
-										}
-									</style>
-								</defs>
-								<path class="cls-1"
-									d="M149.38,57.22c-.23.29-.45.6-.7.87a2.91,2.91,0,0,1-5.11-1.57,11.82,11.82,0,0,1,0-1.46q0-18.3,0-36.61A12.08,12.08,0,0,0,138.83,8.3a12.69,12.69,0,0,0-8.05-2.43H18.49a12.47,12.47,0,0,0-8,2.5,12,12,0,0,0-4.62,10q0,14.65,0,29.32v83.13c0,5.13,2,9.1,6.7,11.5a12.36,12.36,0,0,0,5.64,1.21q56.51,0,113,0c5.91,0,10.3-3.3,11.87-8.82a14.39,14.39,0,0,0,.47-4q0-22.68,0-45.36a3,3,0,0,1,2.16-3.21c1.31-.38,2.45.16,3.39,1.59a4,4,0,0,0,.28.32v50.47c-.91,7.34-5.24,11.86-11.93,14.42a12.22,12.22,0,0,1-4.45.59q-58.32,0-116.64,0c-7.78,0-14.59-6.38-16.19-13.19a15,15,0,0,1-.3-3.48c0-38.78.05-77.57,0-116.35C-.2,7.92,7.55.94,13.32.25A4.52,4.52,0,0,0,15.18,0h119c6.56.66,10.95,4.34,13.88,10a14.16,14.16,0,0,1,1.29,5.14Z">
-								</path>
-								<path class="cls-1"
-									d="M149.38,71.51c-1.27,1.93-2.54,2.53-4,1.85a2.8,2.8,0,0,1-1.79-2.88,2.77,2.77,0,0,1,2.16-2.61A2.71,2.71,0,0,1,148.79,69c.2.26.39.54.59.8Z">
-								</path>
-								<path class="cls-1"
-									d="M73.49,109.55a35.79,35.79,0,0,1-21.18-7.71c-1-.78-1.93-1.63-2.85-2.49a3,3,0,0,1-.4-4.38,2.86,2.86,0,0,1,4.29,0,30.79,30.79,0,0,0,8.84,6c11.59,4.8,22.32,3.34,32.13-4.54.53-.42,1-.91,1.53-1.35,1.65-1.41,3.31-1.45,4.51-.1s.93,3-.58,4.48a39.44,39.44,0,0,1-7.71,5.68C86.81,108.17,79,110,73.49,109.55Z">
-								</path>
-								<path class="cls-1"
-									d="M37.06,62.55a12.25,12.25,0,0,1,24.46-.06c.13,2-.9,3.37-2.63,3.54s-2.9-.86-3.19-2.8c-.59-3.87-2.57-6.08-5.68-6.34a6.31,6.31,0,0,0-7.13,6C42.73,64.67,42,65.7,40.56,66,38.42,66.4,37,65,37.06,62.55Z">
-								</path>
-								<path class="cls-1"
-									d="M112.33,62.63c0,2-1,3.34-2.72,3.43S106.68,65,106.49,63a6.3,6.3,0,0,0-6-6.09c-3.48-.15-6,2-6.61,5.59,0,.1,0,.19-.06.29-.41,2.51-1.55,3.57-3.5,3.25S87.6,64.13,88,61.69c1-6.28,5.63-10.67,12-10.78A12.14,12.14,0,0,1,112.33,62.63Z">
-								</path>
-							</svg>
-							<p>Tham Dự</p>
-						</div>
+              <div class="response-item" data-response="no">
+                <svg
+                  id="Layer_1"
+                  data-name="Layer 1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 149.41 149.42"
+                >
+                  <defs>
+                    <style>
+                      .cls-1 {
+                        fill: #545554;
+                      }
+                    </style>
+                  </defs>
+                  <path
+                    class="cls-1"
+                    d="M149.37,84.06v50.47c-.91,7.34-5.24,11.86-11.92,14.42a12.28,12.28,0,0,1-4.45.59q-58.32,0-116.64,0c-7.78,0-14.59-6.38-16.2-13.19a15.54,15.54,0,0,1-.3-3.48c0-38.78.06-77.57,0-116.35C-.2,7.92,7.55.94,13.32.25A4.45,4.45,0,0,0,15.17,0h119c6.57.66,11,4.34,13.89,10a14.15,14.15,0,0,1,1.28,5.14v42c-.23.29-.44.6-.69.87a2.91,2.91,0,0,1-5.11-1.57,11.82,11.82,0,0,1,0-1.46q0-18.3,0-36.61a12.07,12.07,0,0,0-4.7-10.15,12.71,12.71,0,0,0-8.05-2.43H18.49a12.47,12.47,0,0,0-8,2.5,12.05,12.05,0,0,0-4.63,10q0,14.65,0,29.32v83.13c0,5.13,2,9.1,6.7,11.5a12.34,12.34,0,0,0,5.63,1.21q56.52,0,113,0c5.92,0,10.31-3.3,11.88-8.82a14.77,14.77,0,0,0,.47-4V85.36a3,3,0,0,1,2.17-3.21c1.31-.38,2.44.16,3.39,1.59A3.82,3.82,0,0,0,149.37,84.06Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M149.37,69.76v1.75c-1.27,1.93-2.54,2.53-4,1.85a2.9,2.9,0,0,1,.37-5.49A2.7,2.7,0,0,1,148.78,69C149,69.22,149.18,69.5,149.37,69.76Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M111.69,110c.34.41.31.6-.09.91-1.59,1.21-3.17,2.42-4.71,3.68-.62.51-.9.19-1.27-.26a33.12,33.12,0,0,0-7.86-7.08A34.25,34.25,0,0,0,75,101.8c-.74.08-.74.39-.64.92,1.56,9.09-5.37,19.33-15.92,20.7A18.78,18.78,0,0,1,37.19,107a14.27,14.27,0,0,1,0-1.85c-.14-3.6,1.27-6.73,3-9.7C44.3,88.68,49.67,83,55.38,77.58c.47-.45.69-.25,1,.08A88,88,0,0,1,70.23,93.57a2.12,2.12,0,0,0,2.46,1.11,39.09,39.09,0,0,1,17.47,1.09A41.93,41.93,0,0,1,111.69,110Zm-54.2,6c6.77-.89,12.34-9,8.21-15.84a79.88,79.88,0,0,0-9.83-12.69,65.71,65.71,0,0,0-9.35,11.87,11.09,11.09,0,0,0-2,5.68A11.39,11.39,0,0,0,57.49,116.07Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M101.54,55.07A7.41,7.41,0,1,1,94.06,62,7.42,7.42,0,0,1,101.54,55.07Z"
+                  ></path>
+                  <path
+                    class="cls-1"
+                    d="M63.2,62.28a7.36,7.36,0,1,1-7.33-7.21A7.4,7.4,0,0,1,63.2,62.28Z"
+                  ></path>
+                </svg>
+                <p>Rất tiếc</p>
+              </div>
+            </div>
 
-						<div class="response-item" data-response="no">
-							<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.41 149.42">
-								<defs>
-									<style>
-										.cls-1 {
-											fill: #545554;
-										}
-									</style>
-								</defs>
-								<path class="cls-1"
-									d="M149.37,84.06v50.47c-.91,7.34-5.24,11.86-11.92,14.42a12.28,12.28,0,0,1-4.45.59q-58.32,0-116.64,0c-7.78,0-14.59-6.38-16.2-13.19a15.54,15.54,0,0,1-.3-3.48c0-38.78.06-77.57,0-116.35C-.2,7.92,7.55.94,13.32.25A4.45,4.45,0,0,0,15.17,0h119c6.57.66,11,4.34,13.89,10a14.15,14.15,0,0,1,1.28,5.14v42c-.23.29-.44.6-.69.87a2.91,2.91,0,0,1-5.11-1.57,11.82,11.82,0,0,1,0-1.46q0-18.3,0-36.61a12.07,12.07,0,0,0-4.7-10.15,12.71,12.71,0,0,0-8.05-2.43H18.49a12.47,12.47,0,0,0-8,2.5,12.05,12.05,0,0,0-4.63,10q0,14.65,0,29.32v83.13c0,5.13,2,9.1,6.7,11.5a12.34,12.34,0,0,0,5.63,1.21q56.52,0,113,0c5.92,0,10.31-3.3,11.88-8.82a14.77,14.77,0,0,0,.47-4V85.36a3,3,0,0,1,2.17-3.21c1.31-.38,2.44.16,3.39,1.59A3.82,3.82,0,0,0,149.37,84.06Z">
-								</path>
-								<path class="cls-1"
-									d="M149.37,69.76v1.75c-1.27,1.93-2.54,2.53-4,1.85a2.9,2.9,0,0,1,.37-5.49A2.7,2.7,0,0,1,148.78,69C149,69.22,149.18,69.5,149.37,69.76Z">
-								</path>
-								<path class="cls-1"
-									d="M111.69,110c.34.41.31.6-.09.91-1.59,1.21-3.17,2.42-4.71,3.68-.62.51-.9.19-1.27-.26a33.12,33.12,0,0,0-7.86-7.08A34.25,34.25,0,0,0,75,101.8c-.74.08-.74.39-.64.92,1.56,9.09-5.37,19.33-15.92,20.7A18.78,18.78,0,0,1,37.19,107a14.27,14.27,0,0,1,0-1.85c-.14-3.6,1.27-6.73,3-9.7C44.3,88.68,49.67,83,55.38,77.58c.47-.45.69-.25,1,.08A88,88,0,0,1,70.23,93.57a2.12,2.12,0,0,0,2.46,1.11,39.09,39.09,0,0,1,17.47,1.09A41.93,41.93,0,0,1,111.69,110Zm-54.2,6c6.77-.89,12.34-9,8.21-15.84a79.88,79.88,0,0,0-9.83-12.69,65.71,65.71,0,0,0-9.35,11.87,11.09,11.09,0,0,0-2,5.68A11.39,11.39,0,0,0,57.49,116.07Z">
-								</path>
-								<path class="cls-1" d="M101.54,55.07A7.41,7.41,0,1,1,94.06,62,7.42,7.42,0,0,1,101.54,55.07Z"></path>
-								<path class="cls-1" d="M63.2,62.28a7.36,7.36,0,1,1-7.33-7.21A7.4,7.4,0,0,1,63.2,62.28Z"></path>
-							</svg>
-							<p>Rất tiếc</p>
-						</div>
-					</div>
+            <h2>Số người tham dự</h2>
+            <div class="select-option">
+              <select id="attendees">
+                <option value="1">1 người</option>
+                <option value="2">2 người</option>
+                <option value="3">3 người</option>
+                <option value="4">4 người</option>
+                <option value="5">5 người</option>
+              </select>
+            </div>
 
-					<h2>Số người tham dự</h2>
-					<div class="select-option">
-						<select id="attendees">
-							<option value="1">1 người</option>
-							<option value="2">2 người</option>
-							<option value="3">3 người</option>
-							<option value="4">4 người</option>
-							<option value="5">5 người</option>
-						</select>
-					</div>
+            <div id="message-response"></div>
 
-					<div id="message-response">
-					</div>
+            <button type="submit" id="btnSubmit">Gửi Phản Hồi</button>
+          </div>
+        </div>
 
-					<button type="submit" id="btnSubmit">Gửi Phản Hồi</button>
-				</div>
-			</div>
+        <div class="page seventh-page">
+          <video poster="./assets/images/gallery/DSC08962.JPG" controls muted>
+            <source src="./assets/videos/pre-wedding.mp4" type="video/mp4" />
+          </video>
+        </div>
 
-			<div class="page seventh-page">
-				<video poster="./assets/images/gallery/DSC08962.JPG" controls muted>
-					<source src="./assets/videos/pre-wedding.mp4" type="video/mp4">
-				</video>
-			</div>
+        <div class="page eighth-page">
+          <hr />
+          <img src="./assets/images/line_gift.png" alt="" />
+          <h1>Gửi lời chúc đến đôi uyên ương</h1>
+          <div class="bank-account">
+            <div class="bank-account-item">
+              <p class="text-center"><strong>Nguyễn Quang Huy</strong></p>
+              <p class="text-center">Vietcombank - 1023218733</p>
+            </div>
+            <hr />
+            <div class="bank-account-item">
+              <p class="text-center"><strong>Trần Du Ý</strong></p>
+              <p class="text-center">Vietcombank - 0071001260424</p>
+            </div>
+          </div>
+        </div>
 
-			<div class="page eighth-page">
-				<hr>
-				<img src="./assets/images/line_gift.png" alt="">
-				<h1>Gửi lời chúc đến đôi uyên ương</h1>
-				<div class="bank-account">
-					<div class="bank-account-item">
-						<p class="text-center"><strong>Nguyễn Quang Huy</strong></p>
-						<p class="text-center">Vietcombank - 1023218733</p>
-					</div>
-					<hr>
-					<div class="bank-account-item">
-						<p class="text-center"><strong>Trần Du Ý</strong></p>
-						<p class="text-center">Vietcombank - 0071001260424</p>
-					</div>
-				</div>
-			</div>
+        <hr class="line-page" />
 
-			<hr class="line-page">
+        <div class="page nineth-page">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4417314461593!2d106.67845591540542!3d10.777440392320855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f266c79200b%3A0x3e85de751c03de9c!2sCAPELLA%20GALLERY%20HALL!5e0!3m2!1svi!2s!4v1673099524181!5m2!1svi!2s"
+            width="520"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
 
-			<div class="page nineth-page">
-				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4417314461593!2d106.67845591540542!3d10.777440392320855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f266c79200b%3A0x3e85de751c03de9c!2sCAPELLA%20GALLERY%20HALL!5e0!3m2!1svi!2s!4v1673099524181!5m2!1svi!2s"
-					width="520" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-					referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-		</div>
-	</div>
+    <div class="functional">
+      <div class="functional-wrapper">
+        <button id="music-btn">
+          <i id="music-icon"></i>
+        </button>
+      </div>
+    </div>
 
-	<div class="functional">
-		<div class="functional-wrapper">
-			<button id="music-btn">
-				<i id="music-icon"></i>
-			</button>
-		</div>
-	</div>
+    <script src="./assets/js/countdown.js"></script>
+    <script src="./assets/js/submitForm.js"></script>
 
-	<script src="./assets/js/countdown.js"></script>
-	<script src="./assets/js/submitForm.js"></script>
+    <script type="module">
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js';
 
-	<script type="module">
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+      const firebaseConfig = {
+        apiKey: 'AIzaSyBj5SHHlrF9maWxcM5QpJyck133LWpFaKA',
+        authDomain: 'yvahuy-wedding.firebaseapp.com',
+        projectId: 'yvahuy-wedding',
+        storageBucket: 'yvahuy-wedding.appspot.com',
+        messagingSenderId: '119611166132',
+        appId: '1:119611166132:web:a08ab1a611a93f970db6e1',
+        databaseURL:
+          'https://yvahuy-wedding-default-rtdb.asia-southeast1.firebasedatabase.app',
+      };
 
-		const firebaseConfig = {
-			apiKey: 'AIzaSyBj5SHHlrF9maWxcM5QpJyck133LWpFaKA',
-			authDomain: 'yvahuy-wedding.firebaseapp.com',
-			projectId: 'yvahuy-wedding',
-			storageBucket: 'yvahuy-wedding.appspot.com',
-			messagingSenderId: '119611166132',
-			appId: '1:119611166132:web:a08ab1a611a93f970db6e1',
-			databaseURL: 'https://yvahuy-wedding-default-rtdb.asia-southeast1.firebasedatabase.app'
-		};
+      const app = initializeApp(firebaseConfig);
 
-		const app = initializeApp(firebaseConfig);
+      import {
+        getDatabase,
+        set,
+        ref,
+        get,
+        child,
+      } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js';
 
-		import { getDatabase, set, ref, get, child } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js';
+      const db = getDatabase();
+      const btnSubmit = document.getElementById('btnSubmit');
+      const messageResponseWrapper =
+        document.getElementById('message-response');
+      const message = document.createElement('p');
 
-		const db = getDatabase();
-		const btnSubmit = document.getElementById('btnSubmit');
-		const messageResponseWrapper = document.getElementById('message-response');
-		const message = document.createElement('p');
+      const uuidv4 = () => {
+        return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) =>
+          (
+            c ^
+            (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))
+          ).toString(16)
+        );
+      };
 
-		const uuidv4 = () => {
-			return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
-				(c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
-			);
-		}
+      const insertData = () => {
+        const responseItemActive = document.getElementsByClassName(
+          'response-item active'
+        )[0];
+        const typeOfGuestActive = document.getElementsByClassName(
+          'type-of-guest-box active'
+        )[0];
 
-		const insertData = () => {
-			const responseItemActive = document.getElementsByClassName(
-				'response-item active'
-			)[0];
-			const typeOfGuestActive = document.getElementsByClassName(
-				'type-of-guest-box active'
-			)[0];
+        if (
+          !typeOfGuestActive ||
+          !fullName.value ||
+          !responseItemActive ||
+          !attendees.value
+        ) {
+          const success = document.getElementById('success');
+          if (success) {
+            success.remove();
+          }
+          message.setAttribute('id', 'error');
+          message.innerHTML = 'Vui lòng nhập đủ thông tin nhé!!!';
+        } else {
+          const error = document.getElementById('error');
+          if (error) {
+            error.remove();
+          }
+          set(ref(db, '/attendees/' + uuidv4()), {
+            amount: +attendees.value,
+            fullName: fullName.value,
+            response: responseItemActive.getAttribute('data-response'),
+            typeOfGuest: typeOfGuestActive.getAttribute('data-type-of-guest'),
+            createdDate: new Date().getTime(),
+          }).then(() => {
+            message.setAttribute('id', 'success');
+            message.innerHTML = 'Rất cảm ơn quý khách đã đến tham dự ❤';
+          });
+        }
 
-			if (
-				!typeOfGuestActive ||
-				!fullName.value ||
-				!responseItemActive ||
-				!attendees.value
-			) {
-				const success = document.getElementById('success');
-				if (success) {
-					success.remove();
-				}
-				message.setAttribute('id', 'error');
-				message.innerHTML = 'Vui lòng nhập đủ thông tin nhé!!!';
-			} else {
-				const error = document.getElementById('error');
-				if (error) {
-					error.remove();
-				}
-				set(ref(db, "/attendees/" + uuidv4()), {
-					amount: +attendees.value,
-					fullName: fullName.value,
-					response: responseItemActive.getAttribute('data-response'),
-					typeOfGuest: typeOfGuestActive.getAttribute('data-type-of-guest'),
-					createdDate: new Date().getTime()
-				}).then(() => {
-					message.setAttribute('id', 'success');
-					message.innerHTML = 'Rất cảm ơn quý khách đã đến tham dự ❤';
-				});
-			}
+        messageResponseWrapper.append(message);
+      };
 
-			messageResponseWrapper.append(message)
-		}
+      btnSubmit.addEventListener('click', (e) => {
+        e.preventDefault();
+        insertData();
+      });
+    </script>
 
-		btnSubmit.addEventListener('click', (e) => {
-			e.preventDefault();
-			insertData();
-		});
-	</script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+        speed: 400,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+        },
+      });
 
-	<script>
-		const swiper = new Swiper('.swiper', {
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-			loop: true,
-			speed: 400,
-			centeredSlides: true,
-			autoplay: {
-				delay: 5000,
-			},
-		});
+      const music = document.getElementById('music');
+      const musicBtn = document.getElementById('music-btn');
+      const musicIcon = document.getElementById('music-icon');
 
-		const music = document.getElementById('music');
-		const musicBtn = document.getElementById('music-btn');
-		const musicIcon = document.getElementById('music-icon');
+      musicIcon.classList.add('fa-solid', 'fa-volume-xmark');
 
-		musicIcon.classList.add('fa-solid', 'fa-volume-xmark');
+      setTimeout(function () {
+        $('#music').trigger('click');
+      }, 500);
 
-		window.addEventListener('scroll', () => {
-			musicIcon.classList.remove('fa-solid', 'fa-volume-xmark');
-			musicIcon.classList.add('fa-solid', 'fa-volume-high');
-			music.play();
-			music.muted = false;
-		})
+      $('#music').click(function () {
+        musicIcon.classList.remove('fa-solid', 'fa-volume-xmark');
+        musicIcon.classList.add('fa-solid', 'fa-volume-high');
+        music.play();
+        music.muted = false;
+      });
 
-		musicBtn.addEventListener('click', e => {
-			music.muted = !music.muted;
-			music.paused = !music.paused;
-			if (music.muted) {
-				musicIcon.classList.remove('fa-solid', 'fa-volume-high');
-				musicIcon.classList.add('fa-solid', 'fa-volume-xmark');
-			} else {
-				musicIcon.classList.remove('fa-solid', 'fa-volume-xmark');
-				musicIcon.classList.add('fa-solid', 'fa-volume-high');
-			}
-		})
-	</script>
-</body>
+      musicBtn.addEventListener('click', (e) => {
+        music.muted = !music.muted;
+        music.paused = !music.paused;
+        if (music.muted) {
+          musicIcon.classList.remove('fa-solid', 'fa-volume-high');
+          musicIcon.classList.add('fa-solid', 'fa-volume-xmark');
+        } else {
+          musicIcon.classList.remove('fa-solid', 'fa-volume-xmark');
+          musicIcon.classList.add('fa-solid', 'fa-volume-high');
+        }
+      });
 
+      const cal = ics();
+      cal.addEvent(
+        "Quang Huy and Du Y's wedding",
+        "Quang Huy and Du Y's wedding",
+        'Trung tâm hội nghị tiệc cưới Capella Gallery Hall',
+        '02/11/2023 18:00:00',
+        '02/11/2023 22:00:00'
+      );
+    </script>
+  </body>
 </html>
